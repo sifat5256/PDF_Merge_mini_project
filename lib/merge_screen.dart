@@ -222,7 +222,7 @@ class _PDFMergerScreenState extends State<PDFMergerScreen> {
       mergedPdfPath = null;
     });
   }
-
+////_____________________________________________________///////////////////////////////////////////////
   void _removeFile(int index) {
     setState(() {
       selectedFiles.removeAt(index);
@@ -241,7 +241,7 @@ class _PDFMergerScreenState extends State<PDFMergerScreen> {
       selectedFiles.insert(newIndex, item);
     });
   }
-
+///_________________________________________if we need to share________________________________________
   Future<void> _sharePDF() async {
     if (mergedPdfPath != null) {
       await Share.shareXFiles([XFile(mergedPdfPath!)], text: 'Merged PDF Document');

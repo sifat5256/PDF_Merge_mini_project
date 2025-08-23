@@ -2,12 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:pdf_merge/merge_screen.dart';
+import 'package:pdf_merge/pdf_translator_screen.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'dart:io';
+
+import 'merge_pdf_with_api.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PDFMergerScreen(),
+      home: PDFTranslatorScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
